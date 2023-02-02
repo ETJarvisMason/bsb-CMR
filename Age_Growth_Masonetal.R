@@ -23,7 +23,7 @@ hist(bsb.mo$age.mo)
 
 # Annual Growth -----------------------------------------------------------
 
-# traditional Von Bert parameterization
+# Traditional Von Bert parameterization=====
 svTypical <- vbStarts(tl~age,data=bsb)
 unlist(svTypical) 
 
@@ -39,7 +39,7 @@ confint(bootTypical,plot=TRUE)
 plot(bootTypical)
 
 
-# Francis parameterization of the Von Bertalanffy Growth Function
+# Francis parameterization of the Von Bertalanffy Growth Function=====
 svFrancis <- vbStarts(tl~age,data=bsb,type="Francis",tFrancis=c(2,9))
 unlist(svFrancis)
 
@@ -56,9 +56,9 @@ bootFrancis <- nlsBoot(fitFrancis,niter=1000)
 confint(bootFrancis,plot=TRUE)
 plot(bootFrancis)
 
-# Annual Growth -----------------------------------------------------------
+# Monthly Growth -----------------------------------------------------------
 
-# traditional Von Bert parameterization
+# Traditional Von Bert parameterization=====
 svTypical <- vbStarts(tl~age.mo,data=bsb.mo)
 unlist(svTypical) 
 
@@ -72,7 +72,7 @@ bootTypical <- nlsBoot(fitTypical,niter=1000)
 confint(bootTypical,plot=TRUE)
 plot(bootTypical)
 
-# Francis parameterization of the Von Bertalanffy Growth Function
+# Francis parameterization of the Von Bertalanffy Growth Function=====
 svFrancis <- vbStarts(tl~age.mo,data=bsb.mo,type="Francis",tFrancis=c(24,192))
 unlist(svFrancis)
 
@@ -87,5 +87,6 @@ overview(fitFrancis)
 bootFrancis <- nlsBoot(fitFrancis,niter=1000)
 confint(bootFrancis,plot=TRUE)
 plot(bootFrancis)
+
 
 
