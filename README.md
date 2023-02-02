@@ -2,7 +2,7 @@
 
 This is data and code that contributed to the following paper:
 
-SPORADIC, WARM-WATER RECRUITMENT PULSES AND AGGREGATION-BASED FISHING DRIVE MULTIDECADAL BOOM AND BUST CYCLES IN A TEMPERATE AGGREGATE SPAWNER 
+SPORADIC, WARM-WATER RECRUITMENT PULSES AND AGGREGATION-BASED FISHING DRIVE MULTIDECADAL BOOM AND BUST CYCLES IN A TEMPERATE AGGREGATE SPAWNER (tentative title) 
 
 *Erica T. Jarvis Mason<sup>1</sup>, Thomas V. Riecke<sup>2</sup>, Lyall F. Bellquist<sup>1,3</sup>, Daniel J. Pondella II<sup>4</sup>, Brice X. Semmens<sup>1</sup>*
 
