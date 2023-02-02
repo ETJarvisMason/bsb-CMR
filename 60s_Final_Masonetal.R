@@ -176,8 +176,8 @@ one2 <- rep(1, nrow(y2))
 load("BSB_est_harvest.Rdata")
 
 # harvest data represent thousands of fish
-H.legal <- H.legal.64
-H.sublegal <- H.sublegal.64
+H.legal <- H.legal.64.50
+H.sublegal <- H.sublegal.64.50
 
 nH = length(H.legal)
 
