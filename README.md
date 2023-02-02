@@ -33,6 +33,6 @@ SPORADIC, WARM-WATER RECRUITMENT PULSES AND AGGREGATION-BASED FISHING DRIVE MULT
 
 5. 90s_Final_Masonetal.R (Capture-mark-reencounter model for modeling the 1990s CDFW CMR data)
 
-6. 10s_Final_Masonetal.R (Capture-mark-reencounter model for modeling the 2010s Bellquist CMR data)
+6. 10s_Final_Masonetal.R (Capture-mark-reencounter model for modeling the 2010s L. Bellquist CMR data)
 
 
