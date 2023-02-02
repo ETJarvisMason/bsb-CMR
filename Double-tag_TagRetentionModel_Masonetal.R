@@ -4,7 +4,7 @@
 # 2022
 
 # Background and data simulations
-# Explore relationship between the ratio of fish with 2 vs 1 tag r --------
+# Explore relationship between the ratio of fish with 2 vs 1 tag--------
 
 tagpop<-1000 # num of tagged fish
 fish<-matrix(data=NA, nrow = tagpop,ncol=3) # matrix for storing sims
@@ -352,51 +352,12 @@ cum.prob.tab <- gather(as.data.frame(retain)) %>%
                         TAL == "V10" ~ 10,
                         TAL == "V11" ~ 11))
 
-theme_Publication <- function(base_size=14, base_family="Helvetica") {
-  library(grid)
-  library(ggthemes)
-  (theme_foundation(base_size=base_size, base_family=base_family)
-    + theme(plot.title = element_text(face = "bold",
-                                      size = rel(1.2),vjust = 0), #hjust = 0.5),
-            text = element_text(),
-            panel.background = element_rect(colour = NA),
-            plot.background = element_rect(colour = NA),
-            panel.border =  element_blank(),#element_rect(colour = NA),
-            axis.title = element_text(face = "bold",size = rel(1)),
-            axis.title.y = element_text(angle=90,vjust =2),
-            axis.title.x = element_text(vjust = -0.2),
-            axis.text = element_text(), 
-            axis.line = element_line(colour="black"),
-            axis.ticks = element_line(),
-            panel.grid.major = element_blank(),#element_line(colour="#f0f0f0"),
-            panel.grid.minor = element_blank(),
-            legend.key = element_rect(colour = NA),
-            legend.position = "right",# bottom
-            legend.direction = "vertical",
-            legend.key.size= unit(0.2, "cm"),
-            legend.margin = unit(0, "cm"),
-            legend.title = element_text(face="italic"),
-            plot.margin=unit(c(5,2,2,2),"mm"),
-            strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
-            strip.text = element_text(face="bold")
-    ))
-  
-}
-
-
 cum <- ggplot(cum.prob.tab, aes(x=as.factor(yr), y=prob))+
   geom_boxplot(outlier.shape = NA) + 
   xlab("Time at liberty (years)")+
   ylab("Cumulative proportion")+
-  theme_Publication()
+  theme_classic()
 cum
-
-ggsave("FigA1a.png",
-       path = "C:/Users/etmason/Documents/FirstYearProject2018/MS/Figures",
-       dpi = 600,
-       width=25,
-       height=15,
-       units="cm")
 
 ret.prob.tab <- gather(as.data.frame(lost)) %>% 
   rename(TAL = key, prob = value) %>% 
@@ -417,31 +378,9 @@ noncum <- ggplot(ret.prob.tab, aes(x=as.factor(yr), y=prob))+
   geom_boxplot(outlier.shape = NA) + 
   xlab("Time at liberty (years)")+
   ylab("Retention probability")+
-  theme_Publication()
+  theme_classic()
 noncum
 
-ggsave("FigA1b.png",
-       path = "C:/Users/etmason/Documents/FirstYearProject2018/MS/Figures",
-       dpi = 600,
-       width=25,
-       height=15,
-       units="cm")
-
-library(patchwork)
-(cum | noncum) + plot_annotation(
-  # ((sst_marg / rec_margz) | rec_sst_comp2) + plot_annotation(  
-  # title = 'Recruitment',
-  # caption = '+/- 95 % CI',
-  tag_levels = 'A',
-  theme = theme(plot.title = element_text(size = 24),
-                axis.title = element_text(face = "bold",size = rel(.5)
-                )))
-ggsave("FigA1.png",
-       path = "C:/Users/etmason/Documents/FirstYearProject2018/MS/Figures",
-       dpi = 600,
-       width=25,
-       height=15,
-       units="cm")
 # plot year-specific probability (non-cum.) of tag retention
 boxplot(lost)
 
