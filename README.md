@@ -13,7 +13,7 @@ SPORADIC, WARM-WATER RECRUITMENT PULSES AND AGGREGATION-BASED FISHING DRIVE MULT
 
 **R-script files:**
 
-1. Double-tag_TagRetentionModel_Masonetal.R (Tag retention model for double-tagging data (2 identical tags) with individual recovery times) Includes the following sections:
+1. Double-tag_TagRetentionModel_Masonetal.R (Tag retention model for double-tagging data with individual recovery times) Includes the following sections:
    - Explore relationship between the ratio of fish with 2 vs 1 tag
    - Simulate data and define model
    - Test model
