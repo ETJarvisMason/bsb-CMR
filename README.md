@@ -13,20 +13,20 @@ Erica T. Jarvis Mason(1)*, Thomas V. Riecke(2), Lyall F. Bellquist(1,3), Daniel 
 
 R-script files:
 1) Double-tag_TagRetentionModel_Masonetal.R (Tag retention model for double-tagging data (2 identical tags) with individual recovery times) Includes the following sections:
-Explore relationship between the ratio of fish with 2 vs 1 tag r --------
-Simulate data and define model ------------------------------------------
-Test model --------------------------------------------------------------
-Load and format Kelp Bass double tag data -------------------------------
-Tag retention model (tag loss as a function of age of tag) --------------
-Run tag retention model on double-tag data ------------------------------
-Plot cumulative and non-cumulative tag retention over time --------------
+Explore relationship between the ratio of fish with 2 vs 1 tag r
+Simulate data and define model
+Test model
+Load and format Kelp Bass double tag data
+Tag retention model (tag loss as a function of age of tag)
+Run tag retention model on double-tag data
+Plot cumulative and non-cumulative tag retention over time
 
-2) Age_Growth_Masonetal.R (Age and Growth Model Fits (Traditional Von Bertalanffy and Francis parameterization)) Includes the following sections:
+2) Age_Growth_Masonetal.R (Age and Growth Model Fits (Traditional Von Bertalanffy and Francis parameterization))
 
 3) CMR_wGrowth_Masonetal.R (Capture-mark-reencounter (CMR) data simulation and model testing) Includes the following sections:
-Simulate CMR data--------------------------------------------------------
-Define CMR model in JAGS-------------------------------------------------
-Set up and run model in JAGS---------------------------------------------
+Simulate CMR data
+Define CMR model in JAGS
+Set up and run model in JAGS
 
 4) 60s_Final_Masonetal.R (Capture-mark-reencounter (CMR) model for modeling the 1960s CDFW CMR data)
 
