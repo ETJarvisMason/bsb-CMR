@@ -24,7 +24,7 @@ SPORADIC, WARM-WATER RECRUITMENT PULSES AND AGGREGATION-BASED FISHING DRIVE MULT
 
 2. Age_Growth_Masonetal.R (Age and Growth Model Fits using the Traditional Von Bertalanffy and Francis parameterizations)
 
-3. CMR_wGrowth_Masonetal.R (Capture-mark-reencounter, CMR, data simulation and model testing) Includes the following sections:
+3. CMR_wGrowth_Masonetal.R (Capture-mark-reencounter data simulation and model testing) Includes the following sections:
    - Simulate CMR data
    - Define CMR model in JAGS
    - Set up and run model in JAGS
