@@ -2,7 +2,7 @@
 
 This is data and code that contributed to the following paper:
 
-SPORADIC, WARM-WATER RECRUITMENT PULSES AND AGGREGATION-BASED FISHING DRIVE MULTIDECADAL BOOM AND BUST CYCLES IN A TEMPERATE AGGREGATE SPAWNER (tentative title) 
+Recruitment limitation increases susceptibility to fishing-induced collapse in a spawning aggregation fishery 
 
 *Erica T. Jarvis Mason<sup>1</sup>, Thomas V. Riecke<sup>2</sup>, Lyall F. Bellquist<sup>1,3</sup>, Daniel J. Pondella II<sup>4</sup>, Brice X. Semmens<sup>1</sup>*
 
@@ -10,6 +10,8 @@ SPORADIC, WARM-WATER RECRUITMENT PULSES AND AGGREGATION-BASED FISHING DRIVE MULT
 <sup>2</sup>Department of Ecosystem and Conservation Sciences, University of Montana, USA  
 <sup>3</sup>California Oceans Program, The Nature Conservancy, California, USA  
 <sup>4</sup>Vantuna Research Group, Occidental College, California, USA
+
+citation:  Jarvis Mason ET, Riecke TV, Bellquist LF, Pondella DJ, Semmens BX (2024) Recruitment limitation increases susceptibility to fishing-induced collapse in a spawning aggregation fishery. Mar Ecol Prog Ser 738:203-224
 
 **R-script files:**
 
